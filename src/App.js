@@ -14,7 +14,7 @@ function App() {
   const ArticleLoading = Loading(Article);
   const [appState, setAppState] = useState({
     loading: false,
-    articles: null,
+    article: null,
   });
 
   useEffect((url) => {
@@ -22,17 +22,17 @@ function App() {
     const apiUrl = apiUrl1;
     fetch(apiUrl)
       .then((res) => res.json())
-      .then((articles) => {
-        setAppState({ loading: false, articles: articles });
+      .then((article) => {
+        setAppState({ loading: false, article: article });
       });
   }, [setAppState]);
   return (
     <div className='App'>
       <div className='article-title'>
-        <h1>BBC News Articles</h1>
+        <h1>BBC News Article</h1>
       </div>
       <div className='article-body'>
-        <ArticleLoading isLoading={appState.loading} articles={appState.articles} />
+        <ArticleLoading isLoading={appState.loading} article={appState.article} />
       </div>
       <footer>
         <BrowserRouter>

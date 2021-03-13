@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Article = (props) => {
-  const { articles } = props;
-  if (!articles || articles.length === 0) {
+  const { article } = props;
+  if (!article || article.length === 0) {
     return <p>No Article found</p>;
   }
   return (
     <div>
-        {articles.body.map((article) => {
+        {article.body.map((article) => {
           switch (article.type) {
             case 'heading':
               return (
