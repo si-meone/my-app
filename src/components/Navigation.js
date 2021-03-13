@@ -1,16 +1,14 @@
 import React from 'react';
-
-import { NavLink } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
 const Navigation = () => {
     return (
-       <div>
-          <NavLink to="/article1">Article1</NavLink>
-          <br/>
-          <NavLink to="/article2">Article2</NavLink>
-          <br/>
-          <NavLink to="/article3">Article3</NavLink>
-          <br/>
+       <div className="article-nav ">
+          <NavLink to="/?url=https://raw.githubusercontent.com/bbc/news-coding-test-dataset/master/data/article-1.json">Article1 </NavLink>
+          <NavLink to="/?url=https://raw.githubusercontent.com/bbc/news-coding-test-dataset/master/data/article-2.json">Article2 </NavLink>
+          <NavLink to="/?url=https://raw.githubusercontent.com/bbc/news-coding-test-dataset/master/data/article-3.json">Article3 </NavLink>
+          <NavLink to="/?url=https://raw.githubusercontent.com/bbc/news-coding-test-dataset/master/data/article-4.json">Article4 </NavLink>
+          <NavLink to="/?url=https://raw.githubusercontent.com/bbc/news-coding-test-dataset/master/data/article-5.json">Article5</NavLink>
        </div>
     );
 }

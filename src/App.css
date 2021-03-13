@@ -36,6 +36,11 @@
   textAlign: center;
   fontSize: 50px;
 }
+.article-nav {
+  textAlign: left;
+  fontSize: 50px;
+}
+
 .list {
   list-style: circle;
 }
