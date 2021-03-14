@@ -41,6 +41,15 @@
   fontSize: 50px;
 }
 
+.rank-form{
+  fontSize: 50px;
+   color: var(--basic-color);
+}
+
+.rank-form input{
+  width: 30px
+}
+
 .list {
   list-style: circle;
 }
