@@ -36,11 +36,11 @@
   font-weight: 100;
 }
 .article-loading-text {
-  textAlign: center;
+  text-align: center;
   fontSize: 50px;
 }
 .article-nav {
-  textAlign: center;
+  text-align: center;
   font-size: 20px;
 }
 .article-nav a:link, a:visited {
