@@ -3,7 +3,7 @@ import React from 'react';
 const Article = (props) => {
   const { article } = props;
   if (!article || article.length === 0) {
-    return <p>No Article found</p>;
+    return <p>Please choose an article above and you can provide a ranking at the end of each article: </p>;
   }
   return (
     <div>

@@ -11,8 +11,7 @@ function App() {
 
   const getLastItem = url => url.substring(url.lastIndexOf('/') + 1);
   const authResult = new URLSearchParams(window.location.search);
-  const url = authResult.get('url') ? authResult.get('url') : 'https://raw.githubusercontent.com/bbc/news-coding-test-dataset/master/data/article-1.json';
-
+  const url = authResult.get('url') ? authResult.get('url') : '';
   if (!authResult.get('url')){
          localStorage.removeItem('article-1.json');
          localStorage.removeItem('article-2.json');
@@ -86,17 +85,17 @@ function App() {
           Rate articles:
           <br/>
           {localStorage.getItem('article-1.json') === 'true' ?
-          <input type="text" placeholder="Article 1 rating" value={article1} onChange={e => setArticle1(e.target.value)} /> : ''}
+          <input type="text" placeholder="Article 1 rank" value={article1} onChange={e => setArticle1(e.target.value)} /> : ''}
           {localStorage.getItem('article-2.json') === 'true' ?
-          <input type="text" placeholder="Article 2 rating" value={article2} onChange={e => setArticle2(e.target.value)} /> : ''}
+          <input type="text" placeholder="Article 2 rank" value={article2} onChange={e => setArticle2(e.target.value)} /> : ''}
           {localStorage.getItem('article-3.json') === 'true' ?
-          <input type="text" placeholder="Article 3 rating" value={article3} onChange={e => setArticle3(e.target.value)} /> : ''}
+          <input type="text" placeholder="Article 3 rank" value={article3} onChange={e => setArticle3(e.target.value)} /> : ''}
           {localStorage.getItem('article-4.json') === 'true' ?
-          <input type="text" placeholder="Article 4 rating" value={article4} onChange={e => setArticle4(e.target.value)} /> : ''}
+          <input type="text" placeholder="Article 4 rank" value={article4} onChange={e => setArticle4(e.target.value)} /> : ''}
           {localStorage.getItem('article-5.json') === 'true' ?
-          <input type="text" placeholder="Article 5 rating" value={article5} onChange={e => setArticle5(e.target.value)} /> : ''}
+          <input type="text" placeholder="Article 5 rank" value={article5} onChange={e => setArticle5(e.target.value)} /> : ''}
           <br/>
-          <button type="submit">Send Ratings!</button>
+          <button type="submit">Send Ranking!</button>
         </form>
 
 
