@@ -97,7 +97,7 @@ function App() {
       <footer>
       <div>
         <form className='rank-form'onSubmit={mySubmitHandler} method="POST" action="/">
-          {anyArticleVisited() ? <p>Rank  Articles (between 1 and 5):</p> : ''}
+          {anyArticleVisited() ? <p>Rank  Articles (1 to 5):</p> : ''}
           {hasBeenVisited(articles[0]) ?
           <>
             <label for={articleKeys[0]}>{articleKeys[0]}: </label>
