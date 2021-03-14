@@ -15,7 +15,7 @@
   flex-direction: row;
 }
 .article-title h1 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   color: var(--basic-color);
 }
@@ -23,7 +23,7 @@
   width: 75%;
   margin: 40px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 400px) {
   .article-container {
     width: 100%;
     margin: 0;
@@ -38,16 +38,41 @@
 }
 .article-nav {
   textAlign: left;
-  fontSize: 50px;
+  font-size: 25px;
+}
+.article-nav a:link, a:visited {
+  background-color: red;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.article-nav a:hover, a:active {
+  background-color: black;
+}
+
+.instructions {
+ text-align: center;
 }
 
 .rank-form{
-  fontSize: 50px;
+  font-size: 20px;
    color: var(--basic-color);
 }
-
 .rank-form input{
-  width: 30px
+  font-size: 20px;
+}
+.rank-form button{
+    background-color: red; /* Green */
+    border: 2px solid #555555;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
 }
 
 .list {

@@ -135,7 +135,7 @@ function App() {
           : ''}
 
           <br/>
-          {allArticlesVisited() ? <button type="submit">Send Ranking!</button> : ''}
+          {allArticlesVisited() ? <button type="submit">Send Rankings</button> : ''}
         </form>
       </div>
       </footer>
