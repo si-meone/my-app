@@ -52,13 +52,13 @@ function App() {
   const mySubmitHandler = (event) => {
     if (article1 && article2 && article3 && article4 && article5){
        alert("Summiting the following: " +
-         "  article1 = " + article1 +
-         "  article2 = " + article2 +
-         "  article3 =  " + article3 +
-         "  article4 = " + article4 +
-         "  article5 = " + article5);
+         " article1=" + article1 +
+         " article2=" + article2 +
+         " article3=" + article3 +
+         " article4=" + article4 +
+         " article5=" + article5);
     } else {
-       alert("you may not of read or ranked all the articles no submission occured")
+       alert("Not all articles are ranked no submission occured")
        event.preventDefault();
        return
     }
@@ -84,7 +84,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='article-title'>
+      <div className='app-title'>
         <h1>BBC News</h1>
       </div>
       <div><BrowserRouter forceRefresh>

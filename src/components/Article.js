@@ -12,19 +12,19 @@ const Article = (props) => {
           switch (article.type) {
             case 'heading':
               return (
-                <div key={article.type} className='list'>
+                <div key={article.type} className='article-heading'>
                    <span className='article-text'><h1>{article.model.text}</h1></span>
                 </div>
               );
             case 'paragraph':
               return (
-                <div key={article.type} className='list'>
+                <div key={article.type} className='article-paragraph'>
                    <span className='article-text'><p>{article.model.text}</p></span>
                 </div>
               );
             case 'image':
               return (
-                <div key={article.type} className='list'>
+                <div key={article.type} className='article-image'>
                    <span className='article-image'>
                    <img src={article.model.url} alt={article.model.alt} height={article.model.height} width={article.model.width}></img>
                    </span>
@@ -35,7 +35,7 @@ const Article = (props) => {
                 return (
                    <ul>
                    {article.model.items.map((item) => (
-                       <li className='article-text'>{item}</li>
+                       <li>{item}</li>
                     ))
                     }
 
