@@ -96,7 +96,7 @@ function App() {
       </div>
       <footer>
       <div>
-        <form className='rank-form'onSubmit={mySubmitHandler} method="POST" action="/">
+        <form className='rank-form'onSubmit={mySubmitHandler} method="POST" action="https://httpbin.org/post">
           {anyArticleVisited() ? <p>Rank  Articles (1 to 5):</p> : ''}
           {hasBeenVisited(articles[0]) ?
           <>
