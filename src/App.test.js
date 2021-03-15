@@ -21,7 +21,7 @@ test('no rank info is loaded initially', () => {
   !expect(rank).toBeInTheDocument();
 });
 
-//TODO find how to stubb the request of the APP component so we can check test the ranking behaviour
+//TODO find how to stubb the request of the APP component so we can check test the ranking behaviour. Also Local storage with Mocks
 //test('when clicking and article that ranking is available', () => {
 //  render(<App />);
 //  const link = screen.getByRole('link', { name: /Article1/i });
